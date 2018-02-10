@@ -1,389 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Survey</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
-</head>
-<body>
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class="display-3">Friend Finder</h1>
-            <p class="lead"><h2>Meet your new best friend by simply answering a few questions</h2></p>
-        </div>
-    </div>
-
-   
-    <!-- need to innsert form here for name, pic email maybe ect  -->
-
-<div class ="q1">
-            <h1>Question 1</h1>
-            <h5>This is a question?</h5>
-                <div class="form-check">
-                <div class="form-check">
-                    <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios1" value="option1">
-                    Fo Sho
-                    </label>
-                </div>
-                <div class="form-check">
-                    <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios2" value="option2">
-                    Some what agree
-                    </label>
-                </div>
-                <div class="form-check">
-                    <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios3" value="option3">
-                    Meh
-                    </label>
-                </div>
-                <div class="form-check">
-                    <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios4" value="option4">
-                    Disagree
-                    </label>
-                </div>
-                <div class="form-check">
-                    <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="exampleRadios1" id="exampleRadios5" value="option5">
-                    Hard nope!
-                    </label>
-                </div>
-</div>
-
-<div class ="q2">
-            <h1>Question 2</h1>
-            <h5>This is a question?</h5>
-                    <div class="form-check">
-                    <div class="form-check">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios1" value="option1">
-                        Fo Sho
-                    </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios2" value="option2">
-                        Some what agree
-                        </label>
-                    </div>
-                    <div class="form-check">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios3" value="option3">
-                        Meh
-                    </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios4" value="option4">
-                        Disagree
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios2" id="exampleRadios5" value="option5">
-                        Hard nope!
-                        </label>
-                    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Survey</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <div class="jumbotron jumbotron-fluid">
+            <div class="container">
+                <h1 class="display-3">Friend Finder</h1>
+                <p class="lead"><h2>Meet your new best friend by simply answering a few questions</h2></p>
             </div>
-</div>
+        </div>
 
-<div class ="q3">
-            <h1>Question 3</h1>
-            <h5>This is a question?</h5>
-                <div class="form-check">
-                <div class="form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="exampleRadios3" id="exampleRadios1" value="option1">
-                    Fo Sho
-                </label>
+        <div id="questions" class="container">
+            <h2>Questionnaire</h2>
+            <h3>Your Information</h3>
+            <form>
+                <div class="form-group">
+                    <label for="nameinput">Your Name Here</label>
+                    <input type="text" class"form-controll" id="name" placeholder="">
                 </div>
-                <div class="form-check">
-                    <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="exampleRadios3" id="exampleRadios2" value="option2">
-                    Some what agree
-                    </label>
+
+                <div class="form-group">
+                    <label for ="ExampleInputPassword1">Picture Link</label>
+                    <input type="text" class="form-controll" id="pictureLink" placeholder="">
                 </div>
-                <div class="form-check">
-                <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="exampleRadios3" id="exampleRadios3" value="option3">
-                    Meh
-                </label>
+            </form>
+
+            <h2>1</h2>
+            <p>Wakka, wakka, wakka, wakka</p>
+            <select class="chzn-select" name="faculty" style="width: 300px;">
+                <option disabled select>Choose one</option>
+                <option value="5">Strongly Agree</option>
+                <option value="4">Agree</option>
+                <option value="3">Neutral</option>
+                <option value="2">Disagree</option>
+                <option value="1">Strongly Disagree</option>
+            </select>
+            
+            <h2>2</h2>
+            <p>up, up, down, down, left, right, left, right.</p>
+            <select class="chzn-select" name="faculty" style="width: 300px;">
+                <option disabled select>Choose one</option>
+                <option value="5">Strongly Agree</option>
+                <option value="4">Agree</option>
+                <option value="3">Neutral</option>
+                <option value="2">Disagree</option>
+                <option value="1">Strongly Disagree</option>
+            </select>
+            
+            <h2>3</h2>
+            <p>Do a barrel roll</p>
+            <select class="chzn-select" name="faculty" style="width: 300px;">
+                <option disabled select>Choose one</option>
+                <option value="5">Strongly Agree</option>
+                <option value="4">Agree</option>
+                <option value="3">Neutral</option>
+                <option value="2">Disagree</option>
+                <option value="1">Strongly Disagree</option>
+            </select>
+            
+            <h2>4</h2>
+            <p>Another settelment need your help</p>
+            <select class="chzn-select" name="faculty" style="width: 300px;">
+                <option disabled select>Choose one</option>
+                <option value="5">Strongly Agree</option>
+                <option value="4">Agree</option>
+                <option value="3">Neutral</option>
+                <option value="2">Disagree</option>
+                <option value="1">Strongly Disagree</option>
+            </select>
+
+            <h2>5</h2>
+            <p>HEY....     LOOK<br>                 ...Listen</p>
+            <select class="chzn-select" name="faculty" style="width: 300px;">
+                <option disabled select>Choose one</option>
+                <option value="5">Strongly Agree</option>
+                <option value="4">Agree</option>
+                <option value="3">Neutral</option>
+                <option value="2">Disagree</option>
+                <option value="1">Strongly Disagree</option>
+            </select>
+            
+            <h2>6</h2>
+            <p>The President has been kidnaped by Ninjas.<br>Are you a badenough dude to rescue the president?</p>
+            <select class="chzn-select" name="faculty" style="width: 300px;">
+                <option disabled select>Choose one</option>
+                <option value="5">Strongly Agree</option>
+                <option value="4">Agree</option>
+                <option value="3">Neutral</option>
+                <option value="2">Disagree</option>
+                <option value="1">Strongly Disagree</option>
+            </select>
+
+            <h2>7</h2>
+            <p>I was once an adventurer like you,<br> 
+                till i took an arrow to the knee</p>
+            <select class="chzn-select" name="faculty" style="width: 300px;">
+                <option disabled select>Choose one</option>
+                <option value="5">Strongly Agree</option>
+                <option value="4">Agree</option>
+                <option value="3">Neutral</option>
+                <option value="2">Disagree</option>
+                <option value="1">Strongly Disagree</option>
+            </select>
+
+            <h2>8</h2>
+            <p>The Cake is a lie</p>
+            <select class="chzn-select" name="faculty" style="width: 300px;">
+                <option disabled select>Choose one</option>
+                <option value="5">Strongly Agree</option>
+                <option value="4">Agree</option>
+                <option value="3">Neutral</option>
+                <option value="2">Disagree</option>
+                <option value="1">Strongly Disagree</option>
+            </select>
+
+            <h2>9</h2>
+            <p>The Princess is in another castle</p>
+            <select class="chzn-select" name="faculty" style="width: 300px;">
+                <option disabled select>Choose one</option>
+                <option value="5">Strongly Agree</option>
+                <option value="4">Agree</option>
+                <option value="3">Neutral</option>
+                <option value="2">Disagree</option>
+                <option value="1">Strongly Disagree</option>
+            </select>
+
+            <h2>10</h2>
+            <p>All your bases are belonging to me</p>
+            <select class="chzn-select" name="faculty" style="width: 300px;">
+                <option disabled select>Choose one</option>
+                <option value="5">Strongly Agree</option>
+                <option value="4">Agree</option>
+                <option value="3">Neutral</option>
+                <option value="2">Disagree</option>
+                <option value="1">Strongly Disagree</option>
+            </select>
+        </div>
+
+        <button type="button" id="submit" class="btn btn-primary btn-lg" data-toggle="modal" data-target= "#submitModal">
+            Submit
+        </button>
+
+        <div class="modal fade" id="submitModal" role="dialog">
+            <div class="modal-dialog"> 
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <p class="modal-title">Best Mach</p>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+                    <div class="modal-body">
+                        <p>Match name</p>
+                        <img id="matchedImmage" alt="this guy" src="#">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                    </div> 
                 </div>
-                <div class="form-check">
-                    <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="exampleRadios3" id="exampleRadios4" value="option4">
-                    Disagree
-                    </label>
-                </div>
-                <div class="form-check">
-                    <label class="form-check-label">
-                    <input class="form-check-input" type="radio" name="exampleRadios3" id="exampleRadios5" value="option5">
-                    Hard nope!
-                    </label>
-                </div>
-</div>
-
-<div class ="q4">
-            <h1>Question 4</h1>
-            <h5>This is a question?</h5>
-                    <div class="form-check">
-                    <div class="form-check">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios4" id="exampleRadios1" value="option1">
-                        Fo Sho
-                    </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios4" id="exampleRadios2" value="option2">
-                        Some what agree
-                        </label>
-                    </div>
-                    <div class="form-check">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios4" id="exampleRadios3" value="option3">
-                        Meh
-                    </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios4" id="exampleRadios4" value="option4">
-                        Disagree
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios4" id="exampleRadios5" value="option5">
-                        Hard nope!
-                        </label>
-                    </div>
-</div>
-
-<div class ="q5">
-            <h1>Question 5</h1>
-            <h5>This is a question?</h5>
-                    <div class="form-check">
-                    <div class="form-check">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios5" id="exampleRadios1" value="option1">
-                        Fo Sho
-                    </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios5" id="exampleRadios2" value="option2">
-                        Some what agree
-                        </label>
-                    </div>
-                    <div class="form-check">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios5" id="exampleRadios3" value="option3">
-                        Meh
-                    </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios5" id="exampleRadios4" value="option4">
-                        Disagree
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios5" id="exampleRadios5" value="option5">
-                        Hard nope!
-                        </label>
-                    </div>
-</div>
-
-<div class ="q6">
-                <h1>Question 6</h1>
-                <h5>This is a question?</h5>
-                        <div class="form-check">
-                        <div class="form-check">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="exampleRadios6" id="exampleRadios1" value="option1">
-                            Fo Sho
-                        </label>
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="exampleRadios6" id="exampleRadios2" value="option2">
-                            Some what agree
-                            </label>
-                        </div>
-                        <div class="form-check">
-                        <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="exampleRadios6" id="exampleRadios3" value="option3">
-                            Meh
-                        </label>
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="exampleRadios6" id="exampleRadios4" value="option4">
-                            Disagree
-                            </label>
-                        </div>
-                        <div class="form-check">
-                            <label class="form-check-label">
-                            <input class="form-check-input" type="radio" name="exampleRadios6" id="exampleRadios5" value="option5">
-                            Hard nope!
-                        </label>
-                    </div>
-</div>
-
-<div class ="q7">
-            <h1>Question 7</h1>
-            <h5>This is a question?</h5>
-                    <div class="form-check">
-                    <div class="form-check">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios7" id="exampleRadios1" value="option1">
-                        Fo Sho
-                    </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios7" id="exampleRadios2" value="option2">
-                        Some what agree
-                        </label>
-                    </div>
-                    <div class="form-check">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios7" id="exampleRadios3" value="option3">
-                        Meh
-                    </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios7" id="exampleRadios4" value="option4">
-                        Disagree
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios7" id="exampleRadios5" value="option5">
-                        Hard nope!
-                        </label>
-                    </div>
-</div>
-
-<div class ="q8">
-            <h1>Question 8</h1>
-            <h5>This is a question?</h5>
-                    <div class="form-check">
-                    <div class="form-check">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios8" id="exampleRadios1" value="option1">
-                        Fo Sho
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios8" id="exampleRadios2" value="option2">
-                        Some what agree
-                    </label>
-                    </div>
-                    <div class="form-check">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios8" id="exampleRadios3" value="option3">
-                        Meh
-                    </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios8" id="exampleRadios4" value="option4">
-                        Disagree
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios8" id="exampleRadios5" value="option5">
-                        Hard nope!
-                        </label>
-                    </div>
-</div>
-
-<div class ="q9">
-            <h1>Question 9</h1>
-            <h5>This is a question?</h5>
-                    <div class="form-check">
-                    <div class="form-check">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios9" id="exampleRadios1" value="option1">
-                        Fo Sho
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios9" id="exampleRadios2" value="option2">
-                        Some what agree
-                        </label>
-                    </div>
-                    <div class="form-check">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios9" id="exampleRadios3" value="option3">
-                        Meh
-                    </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios9" id="exampleRadios4" value="option4">
-                        Disagree
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios9" id="exampleRadios5" value="option5">
-                        Hard nope!
-                        </label>
-                    </div>
-</div>
-
-<div class ="q10">
-            <h1>Question 10</h1>
-            <h5>This is a question?</h5>
-                    <div class="form-check">
-                    <div class="form-check">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios10" id="exampleRadios1" value="option1">
-                        Fo Sho
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios10" id="exampleRadios2" value="option2">
-                        Some what agree
-                        </label>
-                    </div>
-                    <div class="form-check">
-                    <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios10" id="exampleRadios3" value="option3">
-                        Meh
-                    </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios10" id="exampleRadios4" value="option4">
-                        Disagree
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <label class="form-check-label">
-                        <input class="form-check-input" type="radio" name="exampleRadios10" id="exampleRadios5" value="option5">
-                        Hard nope!
-                        </label>
-                    </div>
-</div>
-
-    <!-- </div>  -->
-</body>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                var answersArray= [];
+                $("#submit").on("click", function(){
+                    // loop through all questions and get choice values
+                    var optionsArray=  $("#questions").children("select").children();
+                    // loop throught this array and push to answers aarray, if selected
+            
+                    
+                });
+            });
+        </script>
+    </body>
 </html>
-
-
