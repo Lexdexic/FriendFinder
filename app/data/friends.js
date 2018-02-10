@@ -6,7 +6,7 @@ var friendsArray=[
     },
     {
         name:"Link",
-        photo:https:"https://en.wikipedia.org/wiki/Link_(The_Legend_of_Zelda)#/media/File:Wakerlink.jpg",
+        photo:"https://en.wikipedia.org/wiki/Link_(The_Legend_of_Zelda)#/media/File:Wakerlink.jpg",
         scores:[1,4,4,6,5,2,5,1,5,3]
     },
     {
@@ -54,7 +54,7 @@ let Promise = new Promise(function(resolove, reject){
     }
     var matchedFriendIndex = math.min.apply(null, chosenFriendArray);
     console.log(matchedFriendIndex);
-    var firendsDataIndex= chosenFriendArray);
+    var firendsDataIndex= chosenFriendArray;
     console.log(matchedFriendIndex);
     var firendsDataIndex= chosenFriendArray.indexOf(matchedFriendIndex);
     console.log(firendsDataIndex);
@@ -66,3 +66,12 @@ let Promise = new Promise(function(resolove, reject){
         reject(false);
     }
 });
+friendPromis.then(function(fromResolved){
+    firendsData.push(newFriend);
+    console.log(fromResolved);
+    if(fromResolved == false){
+        res.send("No new Friend");
+    }else{
+        res.json(fromResolved);
+    }
+})
